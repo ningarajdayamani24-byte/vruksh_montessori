@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --bg-cream: #E4C5A9;      /* Dark Skin Tone */
+  --brand-brown: #433028;   /* Logo Trunk */
+  --brand-green: #555E4D;   /* Logo Leaves */
+  --brand-gold: #AC9453;    /* Logo Glow */
+  --brand-terra: #8E5949;   /* Logo Earth */
+  --brand-sand: #DBAD83; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-cream);
+  color: var(--brand-brown);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .brand-font {
+  font-family: 'Playfair Display', serif; 
+}
+
+/* Elegant Scrollbar matching the deeper brand tone */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-cream); }
+::-webkit-scrollbar-thumb { background: var(--brand-terra); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--brand-brown); }
