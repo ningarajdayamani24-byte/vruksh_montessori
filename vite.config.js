@@ -1,7 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/vruksh_montessori/', // Matches your repo name
+  // Use './' for Cloudflare Pages so it looks for files relative to the current page
+  base: './', 
 })
